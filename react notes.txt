@@ -1,0 +1,85 @@
+Create new project - MUST HAVE NODE INSTALLED
+- in command prompt cd to where you want to create project
+- npx create-react-app project-name
+- cd into the named project and open in code with "code ."
+
+Live Preview
+in VS Code live preview of app.js
+- terminal
+- npm run start
+
+or
+
+- Ctrl + Q
+- NPM Scripts
+
+Close Live Preview
+- Ctrl + C
+
+
+Reinstall node_modules Folder
+if node_modules folder absent install them again
+- terminal
+- npm install
+
+Components are functions that start with a capital letter
+
+
+write JSX html style templates and components then Babble converts all JSX into html
+
+JSX you add classes to elements with the attribute className=""
+
+always export your component function at the end of the code so it can be
+used in other files, such as importing them in index.js or their parent component
+
+component functions can have javascript before the return()
+to set variables to be used in the JSX code. Strings, numbers, and arrays can be
+used as variables in the JSX but booleans and objects cannot 
+
+App.js is the "root component" its the first that gets rendered to the dom and sits 
+at the top most of our application
+
+In React components are structured like a tree root is the top and is initially rendered
+additional components are nested inside the root App.js component
+
+sfc + tab: creates stateless functional component, a boiler plate for making components
+
+index.css will affect all content in the browser and is imported in the index.js file
+React takes those styles and adds them to the top of the webpage
+
+in-line styling in component elements can be done with two sets of curly braces and a set
+of key:value pairs
+
+<a href="/" style={{
+  color: "green",
+  backgroundColor: "white",
+  borderRadius: "8px"
+}}>This is a link</a>
+
+
+
+
+difference between function() and function
+putting the named function somewhere with braces is "invoking" the 
+function which will run on its own. Putting the named function without the braces
+is using it as a reference. in a click event you just want to reference the click handling
+function not envoke it or it will run as soon as the page loads.
+
+make values reactive so that when the value changes React knows to update the broswer with
+the new value. This is called a hook. a function that starts with "use"
+in order to use hooks import { useState } from 'react';
+
+props are a way to pass data from a parent component to a child component
+say you have a child component that displays a list of blogs. That child
+component doesn't have any blog data to display so in the parent component we
+give the child component the data it will use
+
+useEffect will run a function whenever the page is redered either from initial
+load of the page or when a hook rerenders the page. A dependency can be used to that the useEffect
+will only run on initial page render AND whenever the specified state values are updated
+
+npx json-server --watch data/db.json --port 8000
+
+npm install react-router-dom@6
+
+All route go in the routes component
