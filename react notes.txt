@@ -83,3 +83,10 @@ npx json-server --watch data/db.json --port 8000
 npm install react-router-dom@6
 
 All route go in the routes component
+
+In the Routes component react will go from top to bottom trying to match
+a route. It matches if the route is contained in the address so to get around this
+we add "exact" to our route.
+
+For react to intercept requests for other pages from links we can't use a tags and hrefs.
+We use the Link component with a "to" attribute instead of the href.
