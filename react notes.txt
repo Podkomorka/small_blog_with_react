@@ -90,3 +90,9 @@ we add "exact" to our route.
 
 For react to intercept requests for other pages from links we can't use a tags and hrefs.
 We use the Link component with a "to" attribute instead of the href.
+
+Abort Controler is used to stop a fetch request that has started but hasnt finished by the
+time a different page is navigated to
+
+if you have pages that are identical but use different data like articles you need to
+use route parameters which are like a variable in a route
